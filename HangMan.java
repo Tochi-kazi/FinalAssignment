@@ -1,3 +1,9 @@
+/**
+ * Name: Tochi Iroakazi
+ * SUbject: ICS4U
+ * description: A game of HAngMan using OOP
+ */
+
 import java.util.*;
 
 public class HangMan {
@@ -36,7 +42,7 @@ public class HangMan {
 		Words.add("BOOKS"); 
 		Collections.shuffle(Words);
 		//add an extericks for the blanks
-		text = Words.get(0);
+		text =  Words.get(0);
 		
 		for (int i = 0; i < text.length(); i++) {
 			WordPiece.add("*");
@@ -85,7 +91,7 @@ public class HangMan {
 		System.out.println("Wrong Guess you lost " + Body.remove(0));
 		System.out.println("You have " + Body.size() + " more body parts remaining");
 		if (Body.size() == 0) {
-			System.out.println("You have lost the game ");
+			//System.out.println("You have lost the game ");
 			scanner.close();
 		}
 	
