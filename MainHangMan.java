@@ -1,3 +1,9 @@
+/**
+ * Name: Tochi Iroakazi
+ * SUbject: ICS4U
+ * description: A game of HAngMan using OOP
+ */
+
 import java.util.*;
 
 public class MainHangMan {
@@ -38,7 +44,12 @@ public class MainHangMan {
 			}
 		}else {
 			System.out.println("The Word is " + myletter.text);
-			System.out.println("DONE, YOU LOST! *Idiot ");
+			if (!myletter.WordPiece.contains("*")) {
+				System.out.println("DONE, YOU WON!");
+				
+			}else {
+				System.out.println("DONE, YOU LOST! from main");
+			}
 		}
 	
 	}
